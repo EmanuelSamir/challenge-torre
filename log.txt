@@ -1,0 +1,193 @@
+commit 40021bc225f36de1a0434cb4c13b686d2a52a50b
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sun Feb 14 05:34:25 2021 -0500
+
+    fix: Changed data read from drive.
+
+ src/app.py | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+commit e5953b451ba25bee0de60d1c173ee1261790d8a3
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sun Feb 14 05:27:54 2021 -0500
+
+    fix: Added changes to nb.
+
+ .../transformation-checkpoint.ipynb                | 139 +++++++++++----------
+ 1 file changed, 74 insertions(+), 65 deletions(-)
+
+commit 6c9b3d9febfba318f497cc4282eb31ccb5cf2fad
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sun Feb 14 05:26:15 2021 -0500
+
+    fix: load data
+
+ .gitignore                    |     2 +-
+ data/reed_uk.csv              | 50001 ++++++++++++++++++++++++++++++++++++++++
+ notebook/transformation.ipynb |    13 +-
+ src/app.py                    |     5 +-
+ 4 files changed, 50017 insertions(+), 4 deletions(-)
+
+commit 8a4167eacaa01532d38a8b18d2b4c7fee43b187b
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sun Feb 14 05:07:58 2021 -0500
+
+    feat:  Added log file
+
+ log.log |  12 -----
+ log.txt | 166 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----
+ 2 files changed, 153 insertions(+), 25 deletions(-)
+
+commit 0a3b2e0385a992219b0cd6729d61a59d0a20f219
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sun Feb 14 05:06:34 2021 -0500
+
+    feat:  Added log file
+
+ log.txt | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+
+commit f315f797e47ac1ae20ade685869d5f94ebd3e599
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sun Feb 14 05:05:46 2021 -0500
+
+    feat:  Added log file
+
+ log.log | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+commit 80a859d7df5b29214ec951e056b8afcebca56b16
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sun Feb 14 05:03:20 2021 -0500
+
+    feat: Added config for deployment.
+
+ Procfile           |   1 +
+ models/lookup-0.h5 | Bin 2560 -> 0 bytes
+ models/lookup-1.h5 | Bin 2560 -> 0 bytes
+ models/lookup.csv  |   1 -
+ requirements.txt   |   9 +++++++++
+ setup.sh           |   9 +++++++++
+ 6 files changed, 19 insertions(+), 1 deletion(-)
+
+commit b8c6fa33b688f1de21dc9068c19c9b719735788b
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sun Feb 14 04:57:53 2021 -0500
+
+    Ready for production
+
+ .../transformation-checkpoint.ipynb                | 132 ++++++++++-----------
+ notebook/transformation.ipynb                      |  98 +++++++--------
+ src/app.py                                         |  65 +++++-----
+ 3 files changed, 149 insertions(+), 146 deletions(-)
+
+commit ab86750590caf6ad7405e096ff4b16ad7df5c62f
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sun Feb 14 04:05:28 2021 -0500
+
+    feat: Added all the modes
+
+ models/lookup-0.h5                                 |  Bin 0 -> 2560 bytes
+ models/lookup-1.h5                                 |  Bin 0 -> 2560 bytes
+ models/lookup.csv                                  |    1 +
+ models/lookup.h5                                   |  Bin 0 -> 7152 bytes
+ .../.ipynb_checkpoints/playground-checkpoint.ipynb | 1125 +++++++++++++++++++-
+ .../transformation-checkpoint.ipynb                |  146 ++-
+ notebook/playground.ipynb                          | 1125 +++++++++++++++++++-
+ notebook/transformation.ipynb                      |  146 ++-
+ src/app.py                                         |  135 ++-
+ training/model_training.py                         |    8 +-
+ 10 files changed, 2496 insertions(+), 190 deletions(-)
+
+commit ff774092e7c824bf9e9a5a3c82ecfe811c3509c3
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sun Feb 14 02:01:00 2021 -0500
+
+    feat: Added wep-app. Hello World
+
+ src/app.py | 26 ++++++++++++++++++++++++++
+ 1 file changed, 26 insertions(+)
+
+commit e79fd4ef7107801a4ea6e07cf284a37729372316
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sun Feb 14 01:34:50 2021 -0500
+
+    Added transformation. New dataset is used
+
+ .../transformation-checkpoint.ipynb                | 27149 ++++++++++++++++++-
+ notebook/transformation.ipynb                      | 27149 ++++++++++++++++++-
+ 2 files changed, 54294 insertions(+), 4 deletions(-)
+
+commit 46a0d52b2fd38b92b047c4270bb9f4d030769f55
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sun Feb 14 00:54:35 2021 -0500
+
+    feat: Added model generator and transformation notebook
+
+ models/search_model.sav                            |  Bin 0 -> 205377 bytes
+ .../.ipynb_checkpoints/analysis-checkpoint.ipynb   | 1294 +-------------------
+ .../.ipynb_checkpoints/playground-checkpoint.ipynb |  308 ++++-
+ .../transformation-checkpoint.ipynb                |    6 +
+ notebook/playground.ipynb                          |   50 +-
+ notebook/transformation.ipynb                      |    6 +
+ training/model_training.py                         |   69 ++
+ 7 files changed, 422 insertions(+), 1311 deletions(-)
+
+commit 12eaddee5b419ea9dba281f149e35ae36367afe5
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sun Feb 14 00:25:16 2021 -0500
+
+    feat: Added notebook for playground
+
+ .../.ipynb_checkpoints/analysis-checkpoint.ipynb   | 1401 +++++++++++++-
+ .../.ipynb_checkpoints/playground-checkpoint.ipynb |    6 +
+ notebook/analysis.ipynb                            | 1954 +-------------------
+ notebook/playground.ipynb                          |  292 +++
+ 4 files changed, 1607 insertions(+), 2046 deletions(-)
+
+commit 04ed083f4bbdafef6b4ea7d039a8c5c1af81ee66
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sat Feb 13 23:08:15 2021 -0500
+
+    feat: Added module experiments in notebook
+
+ notebook/analysis.ipynb | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+commit 656dd427bbfcb31bd5f464b56c8fbee107791277
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sat Feb 13 23:07:54 2021 -0500
+
+    feat: Added module experiments in notebook
+
+ notebook/analysis.ipynb | 1867 ++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 1862 insertions(+), 5 deletions(-)
+
+commit fe0a12d78ef23ba0c097bd99c012d5c7d34812d4
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sat Feb 13 22:15:16 2021 -0500
+
+    feat: Added README
+
+ README.md | 24 ++++++++++++++++++++++++
+ 1 file changed, 24 insertions(+)
+
+commit 449aa11907a11f3cf0e235d4ddd17c407ba25d8b
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sat Feb 13 22:09:20 2021 -0500
+
+    feat: Added analysis notebook
+
+ .gitignore                                         |   1 +
+ .../.ipynb_checkpoints/analysis-checkpoint.ipynb   | 525 +++++++++++++++++++++
+ notebook/analysis.ipynb                            | 525 +++++++++++++++++++++
+ 3 files changed, 1051 insertions(+)
+
+commit ffd501ceaf12a8a5b57175d5395cd078ebb16ca8
+Author: EmanuelSamir <samiremp.2@gmail.com>
+Date:   Sat Feb 13 18:40:50 2021 -0500
+
+    First commit
+
+ .gitignore | 1 +
+ 1 file changed, 1 insertion(+)
