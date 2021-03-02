@@ -2,6 +2,8 @@
 
 This is a simple repo that deploys some modules from a simple analysis to job data in UK. 
 
+Check the following [site](https://lit-shore-78889.herokuapp.com/) where the app has been deployed. 
+
 
 
 ## Installing
